@@ -1,22 +1,33 @@
-# neOOne Associates Website Preview
+# neOOne Associates Website
 
-Static multi-page website preview for neOOne Associates.
+Modern rebuild of the neOOne Associates website using Next.js, Tailwind CSS, Framer Motion and a CMS-ready content layer.
 
-## Preview
+## Development
 
-Open `index.html` in a browser, or deploy the project as a static site.
+```bash
+npm install
+npm run dev
+```
 
-## Deployment
+Open `http://127.0.0.1:3000`.
 
-This project can be deployed on Netlify, Vercel, Cloudflare Pages, or GitHub Pages.
+## Build
 
-For Netlify:
+```bash
+npm run build
+npm run start
+```
 
-- Build command: leave empty
-- Publish directory: `.`
+## Stack
+
+- Next.js app router
+- React
+- Tailwind CSS
+- Framer Motion
+- Sanity-ready content adapter
 
 ## Notes
 
-- Contact forms currently use `mailto:` and do not store submissions.
-- Payment gateway and admin dashboard are not live yet.
-- Programme/payment pages are enquiry-first placeholders until a backend is added.
+- Legacy static `.html`, `styles.css`, `app.js` and build script files have been removed.
+- Programme enquiry is currently email-first.
+- Registration and admin dashboard are intentionally not implemented yet.

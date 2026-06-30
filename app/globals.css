@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background: #f8faf7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(57, 161, 121, 0.13), transparent 28rem),
+    linear-gradient(135deg, #f8faf7 0%, #edf3f2 46%, #fff8ea 100%);
+  color: #18252d;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: #f3b547;
+  color: #10171d;
+}
+
+.growth-map {
+  background-image:
+    linear-gradient(rgba(16, 23, 29, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 23, 29, 0.08) 1px, transparent 1px);
+  background-size: 38px 38px;
+}
+
+.hero-lens {
+  clip-path: polygon(6% 0, 100% 0, 94% 100%, 0 100%);
+}
+
+.route-line {
+  position: relative;
+}
+
+.route-line::before {
+  background: linear-gradient(180deg, #39a179, #f3b547, #e66a4e);
+  border-radius: 999px;
+  content: "";
+  inset: 0 auto 0 1.05rem;
+  position: absolute;
+  width: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

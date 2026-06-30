@@ -2,6 +2,9 @@
 .codex/
 skills-lock.json
 node_modules/
+.next/
+.env.local
+.env.*.local
 .DS_Store
 Thumbs.db
 *.log
